@@ -7,7 +7,9 @@ y = pos.y
 z = pos.z
 
 blockType = mc.getBlock(x, y - 1, z)
-blockType2 = mc.getBlock(x, y - 1, z) 
-mc.postToChat(blockType == 18)
-mc.postToChat(blockType2 == 18) 
+inTree = blockType == 18
+mc.postToChat("You are in a tree: " + str (inTree)) 
+
+
+
 
